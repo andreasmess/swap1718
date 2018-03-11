@@ -1,5 +1,5 @@
 # SWAP 2017-2018 -  Práctica 1
-***Andreas Messalas, DNI: AH700994*** \\
+***Andreas Messalas, DNI: AH700994*** →→
 ***Marios Krousarlis, DNI: ΑΗ702636***
 
 ----------
