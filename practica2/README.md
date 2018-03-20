@@ -31,3 +31,8 @@
 `rsync -avz -e ssh andreas@192.168.1.61:/var/www/rsync_archivo /tmp`
 ![enter image description here](https://raw.githubusercontent.com/andreasmess/swap1718/master/practica2/5.PNG)
 
+
+**4\. establecer una tarea en cron que se ejecute cada hora para mantener actualizado el contenido del directorio /var/www entre las dos máquinas**
+- Cambiar /etc/crontab : 
+`0 * * * * root rsync -avz -e ssh andreas@192.168.1.61:/var/www/rsync_archivo /tmp`
+![enter image description here](https://raw.githubusercontent.com/andreasmess/swap1718/master/practica2/6.PNG)
