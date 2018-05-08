@@ -65,7 +65,8 @@ Copiar al máquina2  y al balanceador de carga:
 mkdir ./ssl 
 scp maquina1@192.168.44.129:/etc/apache2/ssl/* ./ssl`
  
- Y despues configurar /etc/ngingx/conf.d/default.conf
+ Y despues configurar /etc/ngingx/conf.d/default.conf para aceptar y balancear correctamente tanto
+el tráfico HTTP como el HTTPS.
  ![enter image description here](https://github.com/andreasmess/swap1718/blob/master/practica4/6.JPG?raw=true)
  
  
