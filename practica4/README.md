@@ -1,4 +1,5 @@
 
+
   
 # SWAP 2017-2018 -  Práctica 4
 ***Andreas Messalas, DNI: AH700994***
@@ -17,9 +18,9 @@ Los IPs de cada maquina:
 * maquina1   : **192.168.44.129**
 * maquina2   : **192.168.44.130**
 * balanceador : **192.168.44.128**  
-* balanceador2 : **192.168.44.131**
 
-**Instalar un certificado SSL autofirmado para configurar el acceso por HTTPS**
+## **Instalar un certificado SSL autofirmado para configurar el acceso por HTTPS**
+
 En maquina1 hacemos:
 
     a2enmod ssl  
@@ -62,14 +63,27 @@ Copiar al máquina2  y al balanceador de carga:
       mv ./ssl/* /etc/apache2/ssl
 - De balanceador hacemos: 
 
-mkdir ./ssl 
-scp maquina1@192.168.44.129:/etc/apache2/ssl/* ./ssl`
+    mkdir ./ssl 
+    scp maquina1@192.168.44.129:/etc/apache2/ssl/* ./ssl
+
  
  Y despues configurar /etc/ngingx/conf.d/default.conf para aceptar y balancear correctamente tanto el tráfico HTTP como el HTTPS.
  
  ![enter image description here](https://github.com/andreasmess/swap1718/blob/master/practica4/6.JPG?raw=true)
  
- 
 
-    
+## Cortafuegos con IPTABLES
+
+Escibimos este script, *iptablesrules.sh*
+
+   
+   ![enter image description here](https://raw.githubusercontent.com/andreasmess/swap1718/master/practica4/8.JPG)
+
+Ahora veremos que de maquina2 no podemos acceser maquina1:
+![enter image description here](https://raw.githubusercontent.com/andreasmess/swap1718/master/practica4/9.JPG)
+
+Antes y despues executamos iptablesrules.sh:
+![enter image description here](https://raw.githubusercontent.com/andreasmess/swap1718/master/practica4/7.JPG)
+
+
 
