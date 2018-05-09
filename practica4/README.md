@@ -9,7 +9,7 @@
 ## Preparación del sistema
 
 
-Creamos 4 máquinas virtuales (en **VMware**, porque enfrentamos problemas con virtualbox):  
+Creamos 3 máquinas virtuales (en **VMware**, porque enfrentamos problemas con virtualbox):  
 * **maquina1** (tiene /var/www/html/index.html que muestra "MAQUINA1")
 * **maquina2** (tiene /var/www/html/index.html que muestra "MAQUINA1")
 * **balanceador** (aquí está instalado nginx)
@@ -63,8 +63,10 @@ Copiar al máquina2  y al balanceador de carga:
       mv ./ssl/* /etc/apache2/ssl
 - De balanceador hacemos: 
 
-    mkdir ./ssl 
-    scp maquina1@192.168.44.129:/etc/apache2/ssl/* ./ssl
+ 
+
+       mkdir ./ssl 
+       scp maquina1@192.168.44.129:/etc/apache2/ssl/* ./ssl
 
  
  Y despues configurar /etc/ngingx/conf.d/default.conf para aceptar y balancear correctamente tanto el tráfico HTTP como el HTTPS.
