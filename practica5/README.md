@@ -14,7 +14,6 @@ Creamos 3 máquinas virtuales (en **VMware**, porque enfrentamos problemas con v
 Los IPs de cada maquina:
 * maquina1   : **192.168.44.129**
 * maquina2   : **192.168.44.130**
-* balanceador : **192.168.44.128**  
 
 ## **Instalar MySQL**
 
