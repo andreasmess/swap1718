@@ -9,7 +9,6 @@
 Creamos 3 máquinas virtuales (en **VMware**, porque enfrentamos problemas con virtualbox):  
 * **maquina1** (tiene /var/www/html/index.html que muestra "MAQUINA1")
 * **maquina2** (tiene /var/www/html/index.html que muestra "MAQUINA1")
-* **balanceador** (aquí está instalado nginx)
 
 Los IPs de cada maquina:
 * maquina1   : **192.168.44.129**
