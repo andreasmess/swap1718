@@ -76,7 +76,7 @@ Configuramos maquina2 con la misma manera y reiniciamos el servicio con el coman
 
 Indicamos quién es el maestro en la máquina esclava con este comando:
 
-    CHANGE MASTER TO MASTER_HOST='192.168.44.129', MASTER_USER='slave', MASTER_PASSWORD='slave', MASTER_LOG_FILE='mysql-bin.000001', MASTER_LOG_POS=501, MASTER_PORT=3306;
+    CHANGE MASTER TO MASTER_HOST='192.168.44.129', MASTER_USER='slave', MASTER_PASSWORD='slave', MASTER_LOG_FILE='mysql-bin.000003', MASTER_LOG_POS=976, MASTER_PORT=3306;
 
 Asegurarnos de que todo funciona perfectamente
 
@@ -117,7 +117,7 @@ Asegurarnos de que todo funciona perfectamente
             Seconds_Behind_Master: 0
     Master_SSL_Verify_Server_Cert: No
                     Last_IO_Errno: 1236
-                    Last_IO_Error: Got fatal error 1236 from master when reading data from binary log: 'Client requested master to start replication from position > file size'
+                    Last_IO_Error: 0
                    Last_SQL_Errno: 0
                    Last_SQL_Error:
       Replicate_Ignore_Server_Ids:
